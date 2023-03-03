@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { auth } from "../auth/Firebase.js";
+import { auth } from "../firebase/Firebase.js";
 
 export default function Profile() {
   const [user, setUser] = useState({});

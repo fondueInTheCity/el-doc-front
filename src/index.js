@@ -1,19 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import WorkDictionary from "./components/WorkDictionary.js"
+import WorkDictionary from "./pages/WorkDictionary.js"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Auth from "./auth/Auth";
-import Profile from "./components/Profile.js";
-import Title from "./components/Title.js";
+import Auth from "./pages/Auth";
+import Profile from "./pages/Profile.js";
+import SignUp from "./pages/SignUp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
-    <Title />
     <Routes>
     <Route exact path="/login" element={<Auth />} />
+    <Route exact path="/signup" element={<SignUp />} />
     <Route exact path="/" element={<WorkDictionary />} />
     <Route exact path="/profile" element={<Profile />} />
     </Routes>

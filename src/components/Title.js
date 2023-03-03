@@ -1,6 +1,6 @@
 import React from 'react';
 import './Title.css';
-import { logOut } from "../auth/Firebase.js";
+import { logOut } from "../firebase/Firebase.js";
 import { Navigate, NavLink } from "react-router-dom";
 
 function Title() {
